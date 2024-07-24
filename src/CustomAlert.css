@@ -1,6 +1,7 @@
+
 .custom-alert {
     position: fixed;
-    top: 20px;
+    top: 220px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #f8d7da;
@@ -24,28 +25,43 @@
   }
   
   .custom-alert-close {
+    position: absolute;
+    top: 0;
+    right:0;
     background: none;
     border: none;
     color: #721c24;
     font-weight: bold;
     cursor: pointer;
-    margin-left: 15px;
+    /* margin-left: 15px; */
   }
-  
+  .ani{
+    height: 25vh;
+    width: 25vh;
+  }
+ 
   /* Media query for smaller screens */
   @media only screen and (max-width: 600px) {
     .custom-alert {
-        position: fixed;
-        top: 20px;
-        left: 30%;
-      top: 10px;
-      padding: 10px;
-      min-width: 250px;
-      font-size: 14px;
+      position: fixed;
+      top: 232px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #f8d7da;
+      color: #721c24;
+      padding: 15px;
+      border: 1px solid #f5c6cb;
+      border-radius: 5px;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-width: 300px;
     }
-  
-    .custom-alert-close {
-      margin-left: 10px;
+    .ani{
+      height: 15vh;
+      width: 15vh;
     }
   }
   
