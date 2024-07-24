@@ -58,7 +58,7 @@ function App() {
 
   useEffect(() => {
     const setInitialPositions = () => {
-      const initialLoc = window.innerWidth <= 600 ? 180 : 178;
+      const initialLoc = window.innerWidth <= 600 ? 203 : 178;
       const initialLoc2 = window.innerWidth <= 600 ? 250 : 830;
       setLoc(initialLoc);
       setLoc2(initialLoc2);
