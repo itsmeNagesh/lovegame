@@ -58,7 +58,7 @@ function App() {
 
   useEffect(() => {
     const setInitialPositions = () => {
-      const initialLoc = window.innerWidth <= 600 ? 203 : 178;
+      const initialLoc = window.innerWidth <= 600 ? 203 : 200;
       const initialLoc2 = window.innerWidth <= 600 ? 250 : 830;
       setLoc(initialLoc);
       setLoc2(initialLoc2);
@@ -73,7 +73,7 @@ function App() {
 
   const handleMoveButton = () => {
     const maxX = window.innerWidth <= 600 ? window.innerWidth - 150 : 200;
-    const maxY = window.innerHeight <= 600 ? window.innerHeight - 150 : 300;
+    const maxY = window.innerHeight <= 600 ? window.innerHeight - 198 : 300;
     const location = Math.floor(Math.random() * maxX);
     const location2 = Math.floor(Math.random() * maxY);
     setLoc(location);
