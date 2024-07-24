@@ -97,8 +97,10 @@ function App() {
 
   return (
     <>
-      <div className="container c d-flex flex-column">
+    <div>    <span className="date text-danger fw-bold ">{new Date().getFullYear()}@Nagesh_Kushwaha</span></div>
+      <div className="container c d-flex flex-column">   
         <main className="d-flex justify-content-center mt-5">
+    
           <h2 className="mt-4 fw-bold me-2">Do you Love me</h2>
           <img src="/images/hhh.png" alt="heart" className="kk img-fluid" />
         </main>
