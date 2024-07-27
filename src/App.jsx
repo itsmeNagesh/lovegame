@@ -55,7 +55,29 @@ function App() {
   const [alertVisible, setAlertVisible] = useState(false);
   const [loc, setLoc] = useState(0);
   const [loc2, setLoc2] = useState(0);
-
+  const[y,sety]=useState(false);
+  console.log(y)
+  const handleyes=()=>{
+    console.log('yes click')
+    if((window.innerWidth>=600) && (loc===200 && loc2===830)){
+      sety(true);
+      
+      setAlertVisible(true);
+    }
+    else{
+      if( (window.innerWidth <= 600) && (loc===203 && loc2===250)){
+        sety(true);
+      
+        setAlertVisible(true);
+      }
+      else{
+        sety(false);
+        setAlertVisible(true);
+      }
+    }
+ 
+    console.log(y);
+}
   useEffect(() => {
     const setInitialPositions = () => {
       const initialLoc = window.innerWidth <= 600 ? 203 : 200;
@@ -79,7 +101,7 @@ function App() {
     setLoc(location);
     setLoc2(location2);
   };
-
+  
   const showAlert = () => {
     setAlertVisible(true);
     // setTimeout(() => {
@@ -105,7 +127,7 @@ function App() {
           <img src="/images/hhh.png" alt="heart" className="kk img-fluid" />
         </main>
         <section className="ans d-flex justify-content-between">
-          <button className="btn btn-success" onClick={showAlert}>Yes</button>
+          <button className="btn btn-success" onClick={()=>handleyes()}>Yes</button>
           <button
             className="btn btn-danger"
             style={{ position: "absolute", top: `${loc}px`, left: `${loc2}px` }}
@@ -117,7 +139,7 @@ function App() {
         </section>
       </div>
       {alertVisible && (
-        <CustomAlert message="I Love You too Jaan Mere Babu" onClose={() => setAlertVisible(false)} />
+        <CustomAlert message="I Love You too Jaan Mere Babu"  yes={y} onClose={() => setAlertVisible(false)} />
       )}
     </>
   );
