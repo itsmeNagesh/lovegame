@@ -29,8 +29,8 @@ width: 15vh;
 }
 @media only screen and (max-width: 600px) {
   .social{
-    margin-top: 61vh;
-    margin-left: 48%;
+    margin-top: 64vh;
+        margin-left: 26%;
   }
   .ans {
    
@@ -40,10 +40,10 @@ width: 15vh;
     justify-content: space-between;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 360px) {
   .social{
-    margin-top:50vh;
-    margin-left: 48%;
+    margin-top: 58vh;
+    margin-left: 22%;
   }
 }
 
