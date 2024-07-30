@@ -1,56 +1,13 @@
-// import { useState } from 'react'
-// import CustomAlert from './CustomAlert ';
-// import './App.css'
 
-// function App() {
-//   const [alertVisible, setAlertVisible] = useState(false);
-
-//   const[loc,setloc]=useState(178);
-//     const[loc2,setloc2]=useState(830);
-//     const handle=()=>{
-//       if (window.innerWidth <= 600) {
-//         setloc(100)
-//         setloc2(100)
-      
-//       }
-//      console.log(loc,'loc')
-//      console.log(loc2)
-//         let location=Math.floor(Math.random()*200);
-//         let location2=Math.floor(Math.random()*300);
-//         setloc(location); setloc2(location2)
-      
-
-//     }
-//     const showAlert = () => {
-//       setAlertVisible(true);
-//       setTimeout(() => {
-//         setAlertVisible(false);
-//       }, 3000); // Automatically close the alert after 3 seconds
-//     };
-//   return (
-//     <>
-//      <div className="container c d-flex flex-column  ">
-//       <main className='d-flex justify-content-center mt-5'> 
-//          <h2 className='mt-4 fw-bold me-2 '>Do you Love me</h2>
-//       <img src='/images/hhh.png' alt='heart' className='kk img-fluid '/>
-//       </main>
-//       <section className=' ans d-flex justify-content-between '>  <button className='btn btn-success' onClick={showAlert}>Yes</button>
-
-//         <button className='btn btn-danger'style={{position:"absolute" , top:`${loc}px`,left:`${loc2}px`}} onMouseOver={()=>handle()}>No</button>
-//       </section>
-  
-    
-//      </div>   {alertVisible && <CustomAlert message="I Love You too Jaan mere babu " onClose={() => setAlertVisible(false)} />}
-//     </>
-//   )
-// }
-
-// export default App
 
 import { useState, useEffect } from 'react';
 import CustomAlert from './CustomAlert ';
 import './App.css';
-
+import {
+  WhatsappShareButton,
+  WhatsappIcon,
+  FacebookShareCount
+} from "react-share";
 function App() {
   const [alertVisible, setAlertVisible] = useState(false);
   const [loc, setLoc] = useState(0);
@@ -141,6 +98,19 @@ function App() {
       {alertVisible && (
         <CustomAlert message="I Love You too Jaan Mere Babu"  yes={y} onClose={() => setAlertVisible(false)} />
       )}
+      <div className='social d-flex '>
+      
+      <div> <h2 className='fs-3 fw-bold me-3 mt-1'>Share By </h2></div>
+      <WhatsappShareButton url={"https://web.whatsapp.com/"}>
+     
+  
+      <WhatsappIcon size={52} round={true} />
+
+        {count => <span>{count} shares</span>}
+       </WhatsappShareButton>
+      </div>
+ 
+      
     </>
   );
 }

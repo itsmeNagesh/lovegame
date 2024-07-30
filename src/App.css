@@ -13,6 +13,11 @@ body{
   height: 100vh;
  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);;
 }
+.social{
+
+  margin-top: 50vh;
+  margin-left: 80%;
+}
 .kk{
 width: 15vh;
   height: 15vh;
@@ -23,9 +28,10 @@ width: 15vh;
   margin-left: 38%;
 }
 @media only screen and (max-width: 600px) {
-.c{
-
-}
+  .social{
+    margin-top: 61vh;
+    margin-left: 48%;
+  }
   .ans {
    
     width: 60%;
