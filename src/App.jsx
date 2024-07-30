@@ -101,7 +101,7 @@ function App() {
       <div className='social d-flex '>
       
       <div> <h2 className='fs-3 fw-bold me-3 mt-1'>Share By </h2></div>
-      <WhatsappShareButton url={"https://web.whatsapp.com/"}>
+      <WhatsappShareButton url={"https://hellolove.vercel.app/"}>
      
   
       <WhatsappIcon size={52} round={true} />

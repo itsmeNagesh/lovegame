@@ -40,4 +40,10 @@ width: 15vh;
     justify-content: space-between;
   }
 }
+@media only screen and (max-width: 600px) {
+  .social{
+    margin-top:50vh;
+    margin-left: 48%;
+  }
+}
 
