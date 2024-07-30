@@ -5,8 +5,10 @@ import CustomAlert from './CustomAlert ';
 import './App.css';
 import {
   WhatsappShareButton,
+  FacebookIcon,
   WhatsappIcon,
-  FacebookShareCount
+  FacebookShareCount,
+  FacebookShareButton, 
 } from "react-share";
 function App() {
   const [alertVisible, setAlertVisible] = useState(false);
@@ -76,7 +78,7 @@ function App() {
 
   return (
     <>
-    <div>    <span className="date text-danger fw-bold ">{new Date().getFullYear()}@Nagesh_Kushwaha</span></div>
+    <div>   <a href='https://nageshweb.netlify.app/' target='_blank'><span className="date text-danger fw-bold ">{new Date().getFullYear()}@Nagesh_Kushwaha</span></a> </div>
       <div className="container c d-flex flex-column">   
         <main className="d-flex justify-content-center mt-5">
     
@@ -101,15 +103,21 @@ function App() {
       <div className='social d-flex '>
       
       <div> <h2 className='fs-3 fw-bold me-3 mt-1'>Share By </h2></div>
+      
       <WhatsappShareButton url={"https://hellolove.vercel.app/"}>
-     
-  
       <WhatsappIcon size={52} round={true} />
-
         {count => <span>{count} shares</span>}
        </WhatsappShareButton>
+       <FacebookShareButton className='ms-1'
+     url={"https://hellolove.vercel.app/"}     //eg. https://www.example.com
+     quotes={"Hello_Love"}  //"Your Quotes"
+     hashtag={"#Love"} // #hashTag
+   >
+    <FacebookIcon round={true} size={52} />
+  </FacebookShareButton> 
       </div>
- 
+     
+  
       
     </>
   );
