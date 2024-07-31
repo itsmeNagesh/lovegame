@@ -78,8 +78,8 @@ function App() {
 
   return (
     <>
-    <div>   <a href='https://nageshweb.netlify.app/' target='_blank'>
-    <span className="date text-danger fw-bold  fs-6 m-3">{new Date().getFullYear()}@Nagesh_Kushwaha</span></a> </div>
+    {/* <div>   <a href='https://nageshweb.netlify.app/' target='_blank'>
+    <span className="date text-danger fw-bold  fs-6 m-3">{new Date().getFullYear()}@Nagesh_Kushwaha</span></a> </div> */}
       <div className="container c d-flex flex-column">   
         <main className="d-flex justify-content-center mt-5 pt-3">
     
@@ -117,6 +117,8 @@ function App() {
     <FacebookIcon round={true} size={52} />
   </FacebookShareButton> 
       </div>
+      <div>   <a href='https://nageshweb.netlify.app/' target='_blank'>
+      <span className="date text-dark fw-bold  fs-6 m-3">{new Date().getFullYear()}@Nagesh_Kushwaha</span></a> </div>
      
   
       
