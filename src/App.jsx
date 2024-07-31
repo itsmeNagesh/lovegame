@@ -99,7 +99,7 @@ function App() {
         </section>
       </div>
       {alertVisible && (
-        <CustomAlert message="I Love You too Jaan Mere Babu"  yes={y} onClose={() => setAlertVisible(false)} />
+        <CustomAlert message="I Love You too Jaan, Mele Babu"  yes={y} onClose={() => setAlertVisible(false)} />
       )}
       <div className='social d-flex '>
       

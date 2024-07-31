@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+.msg{
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
 .date{
   margin-top: 19vh;
 font-size: 10px;
