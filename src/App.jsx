@@ -117,7 +117,7 @@ function App() {
     <FacebookIcon round={true} size={52} />
   </FacebookShareButton> 
       </div>
-      <div>   <a href='https://nageshweb.netlify.app/' target='_blank'>
+      <div>   <a href='https://nageshwebcode.netlify.app' target='_blank'>
       <span className="date text-dark fw-bold  fs-6 m-3">{new Date().getFullYear()}@Nagesh_Kushwaha</span></a> </div>
      
   
